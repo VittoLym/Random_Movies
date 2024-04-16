@@ -13,7 +13,7 @@ article{
     height: 80vh;
     width: 60vw;
     margin: 0 1rem;
-    background-image: url('/src/assets/movies/unnamed.webp');
+    background-image: url('/src/assets/Movies/unnamed.webp');
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
