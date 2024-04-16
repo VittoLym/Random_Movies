@@ -19,7 +19,7 @@ const title2 = 'Show all Movies'
 <style scoped>
 section{
     height: max-content;
-    background-image: url('./src/assets/bg6.jpg');
+    background-image: url('/src/assets/bg6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
