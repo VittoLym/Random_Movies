@@ -1,27 +1,20 @@
 <script setup>
 import { ref, onUpdated, onMounted, computed } from 'vue';
 const props = defineProps(['name', 'fecha'])
-const name = ref(props.name) 
-const fecha = ref(props.fecha) 
 const title = ref('Titanic (05/02/1998)')
 function moveTo() {
     window.open("https://es.wikipedia.org/wiki/Titanic_(película_de_1997)", "_blank")
 }
-onMounted(()=>{
-    console.log(title.value)
-    console.log(name.value)
-})
 onUpdated(()=>{
-    console.log(name.value)
-    console.log(props.fecha)
     if(props.name && props.fecha){
-        title.value = `${props.name} ${props.fecha}`
-        console.log(title.value)
+        title.value = `${props.name} (${props.fecha})`
+        const backgroundImage = document.getElementById('img-fondo')
+        backgroundImage.style.backgroundImage = 'url(src/assets/Movies/TheShining.webp)'
     }
 })
 </script>
 <template>
-    <article>
+    <article id="img-fondo">
         <div @click="moveTo">
             <p v-html="title"></p>
         </div>
