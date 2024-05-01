@@ -8,7 +8,7 @@ function moveTo(wiki) {
 onUpdated(()=>{
     title.value = `${props.movie.name} ${props.movie.fecha}`
     const back = document.getElementById('img-fondo')
-    back.style.backgroundImage = `url(/src/assets/Movies/taxi-driver.jpg)`
+    back.style.backgroundImage = `url(${props.movie.img})`
 })
 </script>
 <template>
