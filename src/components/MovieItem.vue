@@ -1,21 +1,19 @@
 <script setup>
-import { ref, onUpdated, onMounted, computed } from 'vue';
-const props = defineProps(['name', 'fecha'])
-const title = ref('Titanic (05/02/1998)')
-function moveTo() {
-    window.open("https://es.wikipedia.org/wiki/Titanic_(película_de_1997)", "_blank")
+import { ref, onUpdated } from 'vue';
+const props = defineProps(['movies','movie',])
+const title = ref('')
+function moveTo(wiki) {
+    window.open(`${wiki}`, "_blank")
 }
 onUpdated(()=>{
-    if(props.name && props.fecha){
-        title.value = `${props.name} (${props.fecha})`
-        const backgroundImage = document.getElementById('img-fondo')
-        backgroundImage.style.backgroundImage = 'url(src/assets/Movies/TheShining.webp)'
-    }
+    title.value = `${props.movie.name} ${props.movie.fecha}`
+    const back = document.getElementById('img-fondo')
+    back.style.backgroundImage = `url(${props.movie.img})`
 })
 </script>
 <template>
     <article id="img-fondo">
-        <div @click="moveTo">
+        <div @click="moveTo(props.movie.wiki)">
             <p v-html="title"></p>
         </div>
     </article>
@@ -26,7 +24,6 @@ article{
     height: 80vh;
     width: 60vw;
     margin: 0 2rem;
-    background-image: url('/src/assets/Movies/unnamed.webp');
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
