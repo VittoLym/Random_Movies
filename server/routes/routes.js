@@ -7,25 +7,25 @@ const movies = [
         name: 'Titanic',
         fecha:'(05/02/1998)',
         wiki:'https://es.wikipedia.org/wiki/Titanic_(película_de_1997)',
-        img:'/src/assets/movies/titanic.webp'
+        img:'/public/movies/titanic.webp'
     },
     {
         name: 'El Resplandor',
         fecha:'(25/12/1980)',
         wiki:'https://es.wikipedia.org/wiki/El_resplandor_(película)',
-        img:'/src/assets/movies/theshining.webp'
+        img:'/public/movies/movies/theshining.webp'
     },
     {
         name: 'Taxi Driver',
         fecha:'(8/2/1976)',
         wiki:'https://es.wikipedia.org/wiki/Taxi_Driver',
-        img:'/src/assets/movies/taxi-driver.jpg'
+        img:'/public/movies/movies/taxi-driver.jpg'
     },
     {
         name: 'El Gigante de Hierro',
         fecha:'(31/7/1999)',
         wiki:'https://es.wikipedia.org/wiki/El_gigante_de_hierro',
-        img:'/src/assets/movies/elgigantedeacero.jpeg'
+        img:'/public/movies/elgigantedeacero.jpeg'
     },
     {
         name: 'Relatos Salvaje',
