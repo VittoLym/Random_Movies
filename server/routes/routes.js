@@ -13,13 +13,13 @@ const movies = [
         name: 'El Resplandor',
         fecha:'(25/12/1980)',
         wiki:'https://es.wikipedia.org/wiki/El_resplandor_(película)',
-        img:'/public/movies/movies/theshining.webp'
+        img:'/public/movies/theshining.webp'
     },
     {
         name: 'Taxi Driver',
         fecha:'(8/2/1976)',
         wiki:'https://es.wikipedia.org/wiki/Taxi_Driver',
-        img:'/public/movies/movies/taxi-driver.jpg'
+        img:'/public/movies/taxi-driver.jpg'
     },
     {
         name: 'El Gigante de Hierro',
@@ -31,7 +31,7 @@ const movies = [
         name: 'Relatos Salvaje',
         fecha:'(17/5/2014)',
         wiki:'https://es.wikipedia.org/wiki/Relatos_salvajes',
-        img:'/src/assets/Movies/relatoSalvaje.jpg'
+        img:'/public/movies/relatoSalvaje.jpg'
     }
 ]
 
