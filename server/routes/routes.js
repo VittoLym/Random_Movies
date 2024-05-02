@@ -19,7 +19,7 @@ const movies = [
         name: 'Taxi Driver',
         fecha:'(8/2/1976)',
         wiki:'https://es.wikipedia.org/wiki/Taxi_Driver',
-        img:'/src/assets/movies/taxi-driver.jpg'
+        img:'https://res.cloudinary.com/dgs55s8qh/image/upload/v1714688896/xwi9vhbbp7m4hzvvwxe7.jpg'
     },
     {
         name: 'El Gigante de Hierro',
