@@ -1,13 +1,11 @@
 <script setup>
 import Header from './components/Header.vue';
-import Movies from './components/Movies.vue';
 
 </script>
 
 <template>
   <div>
-    <Header/>
-    <Movies />
+    <Header />
 </div>
 </template>
 

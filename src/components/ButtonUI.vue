@@ -12,8 +12,18 @@ function moveToMovies() {
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
         inChangeBackgroundColor()
+        const poster = document.getElementById('img-fondo')
+        poster.classList.toggle('active')
+        section.classList.toggle('up')
+    }
+    else{
+        props.test1(true)
+        const poster = document.getElementById('img-fondo')
+        poster.classList.add('active')
     }
 }
+
+const props = defineProps(['test1'])
 </script>
 <template>
     <button class="learn-more" @mousemove="inChangeBackgroundColor" @mouseleave="outChangeBackgroundColor" @click="moveToMovies">
