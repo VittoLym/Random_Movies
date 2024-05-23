@@ -6,5 +6,5 @@ const app = express()
 
 app.use(cors())
 app.use(router)
-app.listen(3000, ()=>{console.log('run on port 3000')})
+app.listen(3300, ()=>{console.log('run on port 3000')})
 
