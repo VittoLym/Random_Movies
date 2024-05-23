@@ -34,8 +34,11 @@ const movies = [
         img:'https://res.cloudinary.com/dim9xwntk/image/upload/v1715217736/images/beu7gdyfygfqiubsxghn.jpg'
     }
 ]
-
-router.get('/bibi',(req, res)=>{res.send('bienvenidos al himalaya')})
+console.log('hola chaval')
+router.get('/bibi',(req, res)=>{
+    console.log('si llega')
+    res.send('bienvenidos al himalaya')
+})
 
 router.get('/json',(req,res)=> {res.json({mantequilla: 'Bienvenidon´t al himalaya'})})
 
