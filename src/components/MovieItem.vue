@@ -42,7 +42,7 @@ async function moviesInit() {
     };
     try {
 
-        const response = await fetch('http://localhost:3300/movies', dataFetch)
+        const response = await fetch('https://visual.algorithmic-market.com/movies', dataFetch)
         const { rMovie, allMovies } = await handleFetchResponse(response);
 
         if (isMovieRepeated(rMovie, movies.value) && movies.value.length < allMovies.length) {
