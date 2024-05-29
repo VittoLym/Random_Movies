@@ -34,9 +34,7 @@ const movies = [
         img:'https://res.cloudinary.com/dim9xwntk/image/upload/v1715217736/images/beu7gdyfygfqiubsxghn.jpg'
     }
 ]
-console.log('hola chaval')
 router.get('/bibi',(req, res)=>{
-    console.log('si llega')
     res.send('bienvenidos al himalaya')
 })
 
