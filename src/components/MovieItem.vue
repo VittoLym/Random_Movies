@@ -189,4 +189,20 @@ aside{
     background-color: #00000059;
     scale: 1;
 }
+@media(max-width:800px){
+    article{
+        width: 90vw;
+    }
+    div p{
+        font-size: 1rem;
+    }
+    div img{
+        padding: 0;
+        height: 35px;
+    }
+    .close{
+        height: 35px;
+        width: 35px;
+    }
+}
 </style>
