@@ -6,7 +6,7 @@ import Header from './components/Header.vue';
 <template>
   <div>
     <Header />
-</div>
+  </div>
 </template>
 
 <style scoped>
@@ -29,5 +29,10 @@ div{
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+@media(max-width:800px){
+  div{
+    background-position: center;
+  }
 }
 </style>
